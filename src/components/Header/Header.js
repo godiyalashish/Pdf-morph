@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <div className="flex bg-primary justify-between items-center p-4 shadow-md fixed top-0 left-0 right-0 z-10">
       <div>
-      <Link to={"/about"}>
+      <Link to={"/"}>
             <p className="px-2 font-bold text-secondary text-5xl">PDF<span className="text-base">morph</span></p>
           </Link>
       </div>

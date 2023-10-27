@@ -7,15 +7,20 @@ import store from './utils/store';
 import { Provider } from "react-redux";
 import { RouterProvider, createBrowserRouter} from "react-router-dom";
 import Body from './components/Body/Body';
+import Error from './components/Error/Error';
+import Login from './components/Login/Login';
 
 
 const appRouter = createBrowserRouter([{
   path:"/",
   element:<App />,
-  // errorElement:<Error />,
+  errorElement:<Error />,
   children:[{
     path:"/",
     element:<Body/>
+  },{
+    path:"/login",
+    element:<Login/>
   }]
 }])
 

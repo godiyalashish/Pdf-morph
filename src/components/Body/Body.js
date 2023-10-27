@@ -56,7 +56,7 @@ const Body = () => {
         }
       }, [file]);
   return (
-    <div className='mt-24 flex items-center p-6 flex-col'>
+    <div className='flex items-center p-6 flex-col'>
     {file===null ? <FileDropper setIsLoading={setIsLoading}/> : (isLoading? <Spinner/> : <PdfEditor/>)}
     </div>
   )
